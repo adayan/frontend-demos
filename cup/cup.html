@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cup</title>
+  <style>
+  .cup {
+    position: relative;
+    top: 100px;
+  }
+
+  .cup-rim {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e5c3b2), to(#e5f3d2));
+    border-radius: 250px/67px;
+    position: absolute;
+    bottom: 333px;
+    left: -100px;
+    z-index: 2;
+    height: 134px;
+    width: 500px;
+  }
+
+  .cup-body {
+    position: absolute;
+    border-top: 400px solid #ec9314;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    width: 300px;
+  }
+
+  .cup-bottom {
+    background: #ec9314;
+    border-radius: 150px/40px;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    z-index: 2;
+    height: 80px;
+    width: 300px;
+    -webkit-box-shadow: 10px 47px 10px #808080 ;
+  }
+
+  .cup-handle {
+    background: red;
+    border-radius: 100px;
+    position: absolute;
+    left: 370px;
+    top: 100px;
+    z-index: -1;
+    height: 200px;
+    width: 200px;
+    -webkit-box-shadow: inset 1px 1px 10px #808080;
+  }
+
+  .inner-cirle {
+    background: #fff;
+    border-radius: 75px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    height: 150px;
+    width: 150px;
+    -webkit-box-shadow: 0 10px 50px #A0522D;
+  }
+  </style>
+</head>
+<body>
+<div class="cup">
+  <div class="cup-body">
+    <div class="cup-rim"></div>
+    <div class="cup-bottom"></div>
+  </div>
+  <div class="cup-handle"><div class="inner-cirle"></div></div>
+</div>
+</body>
+</html>
